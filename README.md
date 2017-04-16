@@ -29,7 +29,7 @@ mkdir kirill
 Создавайте свои коммиты. Заливайте на ГитХаб:
 
 ```
-git push -u valera
+git push
 ```
 
 
