@@ -1,0 +1,74 @@
+.button {
+  font-size: 16px;
+  display: block;
+  text-align: center;
+  padding: 15px 25px;
+  text-decoration: none;
+  border-radius: 25px;
+  line-height: 1.25em;
+  font-weight: bold;
+  margin: 20px 0;
+  background: #fff;
+  color: #008fe9;
+}
+
+.button:hover {
+  font-size: 16px;
+  display: block;
+  background: #d0d9ff;
+  text-align: center;
+  color: #143bd8;
+  padding: 15px 25px;
+  text-decoration: none;
+  border-radius: 25px;
+  line-height: 1.25em;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.link {
+  color: inherit;
+  text-decoration: inherit;
+  margin: 0.5em 20px 0.5em 0;
+  float: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.link:hover {
+  color: inherit;
+  text-decoration: inherit;
+  margin: 0.5em 20px 0.5em 0;
+  float: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.header {
+  background: rgba(20, 59, 216, 0.95);
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header__left {
+  float: left;
+  width: 270px;
+}
+
+.header__center {
+  margin: 0 250px 0 270px;
+}
+
+.header__right {
+  float: right;
+  width: 250px;
+}
+
+.header__logo {
+  background: url(logo.svg) no-repeat;
+  background-size: 170px 17px;
+  width: 170px;
+  height: 17px;
+  display: block;
+  margin: 36px auto;
+}
+
+.clearfix { clear: both; }

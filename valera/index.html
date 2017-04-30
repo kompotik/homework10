@@ -5,51 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>КупиКупе</title>
-  <style>
-    .button {
-      font-size: 16px;
-      display: block;
-      background: #d0d9ff;
-      text-align: center;
-      color: #143bd8;
-      padding: 15px 25px;
-      text-decoration: none;
-      border-radius: 25px;
-      line-height: 1.25em;
-      font-weight: bold;
-      margin: 20px 0;
-    }
-
-    .button:hover {
-      /* tadam */
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body style="font-family: Circe, Arial, Helvetica, sans-serif;">
   <table align="center" style="background: rgba(20, 59, 216, 0.95); padding: 0; border-collapse: collapse; width: 1200px;">
     <tr>
       <td style="padding: inherit; padding-left: 50px; padding-right: 50px; width: 170px;">
         <a href="#" style="display: block;">
-          <img src="logo.svg" style="display: block;" width="170" height="17" alt="КупиКупе">
+          <img style="display: block;" src="logo.svg" width="170" height="17" alt="КупиКупе">
         </a>
       </td>
 
       <td style="color: #fff; text-decoration: none; line-height: 1em; font-size: 20px; padding: inherit;">
         <div style="padding: 25px 60px;">
-          <a href="#" style="color: inherit; text-decoration: inherit; margin: 0.5em 20px 0.5em 0; float: left; border-bottom: 1px solid rgba(255, 255, 255, 0.3);">Купе</a>
-          <a href="#" style="color: inherit; text-decoration: inherit; margin: 0.5em 20px 0.5em 0; float: left; border-bottom: 1px solid rgba(255, 255, 255, 0.3);">Кухни</a>
-          <a href="#" style="color: inherit; text-decoration: inherit; margin: 0.5em 20px 0.5em 0; float: left; border-bottom: 1px solid rgba(255, 255, 255, 0.3);">Кресла и стулья</a>
-          <a href="#" style="color: inherit; text-decoration: inherit; margin: 0.5em 20px 0.5em 0; float: left; border-bottom: 1px solid rgba(255, 255, 255, 0.3); margin-right: 0;">Офисная и торговая мебель</a>
+          <a href="#" class="link">Купе</a>
+          <a href="#" class="link">Кухни</a>
+          <a href="#" class="link">Кресла и стулья</a>
+          <a href="#" class="link" style="margin-right: 0;">Офисная и торговая мебель</a>
           <div style="clear: both;"></div>
         </div>
       </td>
 
       <td style="padding: inherit; padding-left: 50px; padding-right: 50px; width: 150px;">
-        <a href="#" class="button">
-          Сделать заказ
-        </a>
+        <a href="#" class ="button">Сделать заказ</a>
       </td>
     </tr>
   </table>
+
+  <div style="height: 20px;"></div>
+
+  <!-- Блочная вёрстка + БЭМ -->
+  <div class="header">
+    <div class="header__left">
+      <a href="#" class="header__logo"></a>
+    </div>
+
+    <div class="header__right">
+      <a href="#" class ="button">Сделать заказ</a>
+    </div>
+
+    <div class="header__center">
+      <a href="#" class="header__link">Купе</a>
+      <a href="#" class="header__link">Кухни</a>
+      <a href="#" class="header__link">Кресла и стулья</a>
+      <a href="#" class="header__link" style="margin-right: 0;">Офисная и торговая мебель</a>
+    </div>
+
+    <div class="clearfix"></div>
+  </div>
 </body>
 </html>
