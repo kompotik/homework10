@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>КупиКупе</title>
+  <link rel="stylesheet" href="style.css">
   <style>
     .button {
       font-size: 16px;
@@ -31,6 +32,20 @@
       line-height: 1.25em;
       font-weight: bold;
       margin: 20px 0;
+    }  
+    .border {
+      color: inherit;
+      text-decoration: inherit;
+      margin: 0.5em 20px 0.5em 0;
+      float: left; 
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    .border:hover {
+      color: inherit;
+      text-decoration: inherit;
+      margin: 0.5em 20px 0.5em 0;
+      float: left; 
+      border-bottom: 1px solid rgba(255, 255, 255, 0.6);
     }
   </style>
 </head>
@@ -45,10 +60,10 @@
 
       <td style="color: #fff; text-decoration: none; line-height: 1em; font-size: 20px; padding: inherit;">
         <div style="padding: 25px 60px;">
-          <a href="#" style="color: inherit; text-decoration: inherit; margin: 0.5em 20px 0.5em 0; float: left; border-bottom: 1px solid rgba(255, 255, 255, 0.3);">Купе</a>
-          <a href="#" style="color: inherit; text-decoration: inherit; margin: 0.5em 20px 0.5em 0; float: left; border-bottom: 1px solid rgba(255, 255, 255, 0.3);">Кухни</a>
-          <a href="#" style="color: inherit; text-decoration: inherit; margin: 0.5em 20px 0.5em 0; float: left; border-bottom: 1px solid rgba(255, 255, 255, 0.3);">Кресла и стулья</a>
-          <a href="#" style="color: inherit; text-decoration: inherit; margin: 0.5em 20px 0.5em 0; float: left; border-bottom: 1px solid rgba(255, 255, 255, 0.3); margin-right: 0;">Офисная и торговая мебель</a>
+          <a href="#" class="border">Купе</a>
+          <a href="#" class="border">Кухни</a>
+          <a href="#" class="border">Кресла и стулья</a>
+          <a href="#" class="border" style="margin-right:0">Офисная и торговая мебель</a>
           <div style="clear: both;"></div>
         </div>
       </td>
@@ -62,3 +77,25 @@
   </table>
 </body>
 </html>
+ 
+ <div style="height: 20px;">    </div>
+ 
+ <!-- Блоки Элементы Модификаторы-->
+  <div class="header"> 
+    <div class="header__left">
+     <a href="#" class="header__logo"></a>
+    </div>
+
+    <div class="header__right"> 
+     <a href="#" class="button1"> Сделать заказ</a>
+    </div>
+
+    <div class="header__center">
+     <a href="#" class="header__link">Купе</a>
+     <a href="#" class="header__link">Кухни</a>
+     <a href="#" class="header__link">Кресла и стулья</a>
+     <a href="#" class="header__link" style="margin-right:0">Офисная и торговая мебель</a>
+    </div>
+    
+    <div class="clearfix"></div>
+  </div> 
