@@ -1,0 +1,99 @@
+.banner{
+  background: url(banner@2x.png);
+  height: 430px;
+  background-size: 100%;
+  width: 1200px;
+  position: relative;
+  margin: 10px auto auto auto;
+}
+
+.button {
+    font-size: 16px;
+    display: block;
+    background: #ffffff;
+    text-align: center;
+    color: #008fe9;
+    padding: 15px 15px;
+    text-decoration: none;
+    border-radius: 25px;
+    line-height: 1.25em;
+    font-weight: bold;
+    margin: 19px 21px 0 -204px;
+    width: 150px;
+  }
+
+  .button:hover {
+    font-size: 16px;
+    background: #d0d9ff;
+    text-align: center;
+    color: #143bd8;
+  }  
+  .banner_button {
+    font-size: 16px;
+    display: block;
+    background: black;
+    text-align: center;
+    color: #fff;
+    padding: 15px 15px;
+    text-decoration: none;
+    border-radius: 25px;
+    line-height: 1.25em;
+    font-weight: bold;
+    width: 240px;
+    height: 17px;
+    position: absolute;
+    bottom: 0;
+    left: 436px;
+    top: 366px;
+    opacity: 0.6;
+    right: 50px;
+    font-family: Circe Regular;
+  }
+
+  .banner_button:hover{
+    color: #fff;
+    background: black;
+    opacity: 0.8;
+  }
+  .header {
+    background: rgba(20, 59, 216, 0.95);
+    padding: 0;
+    border-collapse: collapse;
+    width: 1200px;
+    margin: 0 auto;
+
+  }
+  .header__left {
+    float: left;
+    width: 270px;
+
+  }
+  .header__right {
+    float: right;
+    width: 0px;
+  }
+  .header__center {
+    font-family: Circe, Arial, Helvetica, sans-serif;
+    margin: 0 250px 0 270px;
+    padding: 35px 60px; 
+  }
+  .header__logo {
+    background: url(logo@2x.png) no-repeat;
+    background-size: 170px 17px;
+    width: 170px;
+    height: 17px;
+    display: block;
+    margin: 36px auto;
+  }
+  .header__link{
+         color: inherit;
+         color: #fff;
+         text-decoration: inherit;
+         border-bottom: 1px solid #5c75de;
+         padding-bottom: 2px;
+         margin: 0px 11px 0px 0px;
+         padding: 2px 0px;
+             font-size: 20px
+  }
+
+.clearfix {clear: both;}
