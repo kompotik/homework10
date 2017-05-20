@@ -1,0 +1,110 @@
+  .button1 {
+    font-size: 16px;
+    display: inline-block;
+    background: #ffffff;
+    text-align: center;
+    color: #008fe9;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    line-height: 1.25em;
+    font-weight: bold;
+    margin: 20px 50px;
+  }
+
+  .button1:hover {
+    background: #d0d9ff;
+    color: #143bd8;
+  }
+
+  .button1_grey {
+    background: lightgrey;
+  }
+
+  .button1_grey:hover {
+    background: grey;
+  }
+
+  .header {
+    background: rgba(20, 59, 216, 0.95);
+    padding: 0;
+    border-collapse: collapse;
+  }
+  .header__left {
+    float: left;
+    width: 270px;
+
+  }
+  .header__right {
+    float: right;
+    width: 250px;
+  }
+  .header__center {
+    font-family: Circe, Arial, Helvetica, sans-serif;
+    margin: 0 250px 0 270px;
+    padding: 25px 60px;
+  }
+  .header__logo {
+    background: url(logo.svg) no-repeat;
+    background-size: 170px 17px;
+    width: 170px;
+    height: 17px;
+    display: block;
+    margin: 36px auto;
+  }
+  /*.header__link{
+    color: #fff;
+    text-decoration: none;
+    line-height: 1em;
+    font-size: 20px;
+    margin-right: 20px;
+    float: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .header__link:hover{
+    color: #fff;
+    text-decoration: none;
+    line-height: 1em;
+    font-size: 20px;
+    margin-right: 20px;
+    float: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  }*/
+
+  .header__link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0.5em 20px 0.5em 0;
+    float: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .header__link:hover {
+    border-bottom-color: rgba(255, 255, 255, 0.6);
+  }
+
+.clearfix {clear: both;}
+
+.base__body {
+  margin: 0;
+}
+
+.base__block {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.banner {
+  background: url(banner@2x.png);
+  height: 430px;
+  background-size: 100%;
+  position: relative;
+}
+
+.banner__footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
