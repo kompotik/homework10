@@ -1,0 +1,130 @@
+.button { 
+          font-size: 16px;
+    display: inline-block;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    border-radius: 25px;
+    line-height: 1.25em;
+    font-weight: bold;
+    margin: 10px 0;
+    background: #fff;
+    color: #008fe9;
+       }
+       
+       .button:hover  {
+           background: #d0d9ff;
+           color:#d0d9ff ; 
+       } 
+       
+       .button1 { 
+          font-size: 16px;
+    display: inline-block;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    border-radius: 25px;
+    line-height: 1.25em;
+    font-weight: bold;
+    margin: 10px 0;
+    background:#65625f;
+    color: #fff;
+       }
+       .button1:hover{
+ font-size: 16px;
+    display: inline-block;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    border-radius: 25px;
+    line-height: 1.25em;
+    font-weight: bold;
+    margin: 10px 0;
+    background: #65625f;
+    color:#fff ;
+       }
+       .link {
+           color: inherit;
+           text-decoration: inherit;
+           margin: 0.5em 20px 0.5em 0;
+           float: left;
+           border-bottom: 1px solid rgba(255, 255, 255, 0.3);    
+       }
+       .link:hover {
+           color: inherit;
+           text-decoration: inherit;
+           margin: 0.5em 20px 0.5em 0;
+           float: left;
+           border-bottom: 1px solid rgba(255, 255, 255, 0.6)
+       }
+
+       .header{
+           background: rgba(20, 59, 216, 0.95);
+           width: 1200px;
+           margin: 0 auto;
+           font-size: 20px;
+       }
+
+       .header__left {
+           float: left;
+           width: 270px
+       }
+       .header__center {
+           margin: 0 250px 0 270px
+           
+       }
+       .header__right {
+           float: right;
+           width: 150px;
+           padding: 0px 47px 0px 0px;
+       }
+
+       .header__logo {
+           background: url(logo@2x.png) no-repeat;
+           background-size: 170px 17px;
+           width: 219px;
+           height: 17px;
+           display:block;
+           margin: 36px auto;
+
+       }
+       .header__link {
+           color: #fff;
+           text-decoration: inherit;
+           margin: 0.5em 20px 0.5em 0;
+           float: left;
+           border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .header__link:hover{
+            border-bottom-color: rgba(255, 255, 255, 0.6);
+        }
+        
+
+       .clearfix {clear: both;} 
+       .base__body{
+           margin: 0;
+       }
+       .base__block {
+           width: 1200px;
+           margin: 0 auto;
+       }
+       .banner {
+           background: url(banner.png);
+           height: 430px;
+           background-size: 100%;
+           text-align: center;
+           
+       }
+       .banner__footer{
+           position: absolute;
+           bottom: 0;
+           width: 100%;
+           text-align:center;
+       }
+
+       
+       
+       
+       
+
+                
