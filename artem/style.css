@@ -29,6 +29,7 @@
     margin: 10px 0;
     background:#65625f;
     color: #fff;
+    margin:260px 260px 0 260px;
        }
        .button1:hover{
  font-size: 16px;
@@ -42,6 +43,7 @@
     margin: 10px 0;
     background: #65625f;
     color:#fff ;
+     margin:260px 260px 0 260px;
        }
        .link {
            color: inherit;
@@ -121,6 +123,8 @@
            width: 100%;
            text-align:center;
        }
+
+      
 
        
        
