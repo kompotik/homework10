@@ -1,3 +1,18 @@
+.mockup {
+  background: url(mockup.png) center top no-repeat;
+  background-size: 1400px 2050px;
+  width: 1400px;
+  height: 2050px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: auto;
+  margin: auto;
+  opacity: 0.2;
+  display: none;
+}
+
 .button {
   font-family: Circe, Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -79,6 +94,7 @@
 .base__block {
   width: 1200px;
   margin: 0 auto;
+  padding: 0 100px 115px;
 }
 
 .banner {
@@ -119,15 +135,15 @@
   font-family: Circe, Arial, Helvetica, sans-serif;
   color: #1f2024;
   font-size: 14px;
-  line-height: 2.1em;
-  margin: 10px 50px;
+  line-height: 2.2em;
+  padding: 10px 50px;
 }
 
 .info__link {
   font-family: Circe, Arial, Helvetica, sans-serif;
   color: #1f2024;
   font-size: 14px;
-  line-height: 2.1em;
+  line-height: 2.2em;
   margin-left: 20px;
   text-decoration: none;
   border-bottom: 1px solid rgba(31, 32, 36, 0.3);
@@ -162,7 +178,7 @@
   color: #1f2024;
   width: 600px;
   margin-right: 0;
-  margin-top: 40px
+  margin-top: 50px
 }
 
 .about__right {
@@ -198,7 +214,7 @@
 }
 
 .images {
-  margin: 40px 0;
+  margin: 30px 0 40px;
 }
 
 .image__item {
@@ -215,8 +231,8 @@
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  line-height: 1.5em;
-  padding: 15px 30px;
+  line-height: 1.6em;
+  padding: 18px 30px;
   background: #143bd8;
   color: #fff;
   border-radius: 4px;
