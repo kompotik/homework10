@@ -6,7 +6,6 @@
 .base__body {
   width: 1400px;
   margin: 0 auto;
-  padding: 50px 0;
   background: #eeeeee;
 }
 
@@ -14,7 +13,25 @@
     width: 1200px;
     margin: 0 auto;
 }  
-
+.loft{
+  color: #1f2024;
+  line-height: 2.14em;
+  font-size: 14px;
+}
+  .loft__left{
+    padding: 0 40px 0 50px;
+    width: 670px;
+    float: left; 
+   }
+    .loft__content{
+      margin: 0.714em 20px 0.714em 0;
+      float: left;
+    }
+  .loft__right{
+    padding: 0 30px 0 0;
+    width: 410px;
+    float: left;
+  }  
 .banner {
   background: url(banner@2x.png);
   height: 430px;
@@ -31,6 +48,7 @@
     float: left;
     width: 270px;
   }
+    
     .header__logo {
       background: url(logo.svg) no-repeat;
       background-size: 170px 17px;
@@ -109,7 +127,7 @@
   .content__right{
     font-size: 16px;
     line-height: 1.5625em;
-    padding: 80px 0 50px 20px;
+    padding: 85px 0 45px 20px;
     float: right;
     width: 400px;
   }
@@ -136,9 +154,8 @@
   .BG_Button{
     position: absolute;
     top: 40px;
-    width: 150px;
-    height: 25px;
-    padding: 17.5px 25px;
+    max-width: 300px;
+    padding: 17.5px 27.5px;
     font-size: 16px;
     line-height: 1.563em;
     text-align: center;
@@ -173,5 +190,158 @@
     float: right;
     width: 600px; 
   }
+
+  .clients__logo{
+    height: 180px;
+  }
+
+  .images_logo{
+    width: 150px;
+    height: 28px;
+    display: block;
+    margin-right: 50px;
+    float: left
+  }
+  .text{
+    margin: 16px 0 0 0;
+    font-size: 16px;
+    line-height: 1.5624em;
+  }
+  .example__work{
+    text-decoration: none;
+    color: #008fe9;
+
+  }
+ 
   .clearfix {clear: both;}
  
+.Top_Bar {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1400px;
+  height: 2050px;
+  z-index: 147;
+}
+._8_800_915_30_00 {
+  font-size: 14px;
+  font-family: "Circe";
+  color: rgb(31, 32, 36);
+  line-height: 2.143;
+  position: absolute;
+  left: 148.937px;
+  top: 9.999px;
+  z-index: 146;
+}
+.Слой_2 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 0px;
+  height: 0px;
+  z-index: 145;
+}
+.Слой_1 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 0px;
+  height: 0px;
+  z-index: 144;
+}
+.Офис:_ТЦ_«Барс»__цокольный_этаж {
+  font-size: 14px;
+  font-family: "Circe";
+  color: rgb(31, 32, 36);
+  line-height: 2.143;
+  position: absolute;
+  left: 265.937px;
+  top: 40.037px;
+  z-index: 143;
+}
+.Underline {
+  background-color: rgb(31, 32, 36);
+  opacity: 0.302;
+  position: absolute;
+  left: 311px;
+  top: 34px;
+  width: 172px;
+  height: 1px;
+  z-index: 142;
+}
+.Телефон_и_офис_работают:_ПН_—_ПТ_с_10_до_18_ {
+  font-size: 14px;
+  font-family: "Circe";
+  color: rgb(31, 32, 36);
+  line-height: 2.143;
+  position: absolute;
+  left: 502.369px;
+  top: 39.037px;
+  z-index: 141;
+}
+.О_нас {
+  font-size: 14px;
+  font-family: "Circe";
+  color: rgb(31, 32, 36);
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 864.937px;
+  top: 16.6px;
+  z-index: 140;
+}
+.Underline {
+  background-color: rgb(31, 32, 36);
+  opacity: 0.302;
+  position: absolute;
+  left: 866px;
+  top: 34px;
+  width: 36px;
+  height: 1px;
+  z-index: 139;
+}
+.Оплата__сроки__доставка {
+  font-size: 14px;
+  font-family: "Circe";
+  color: rgb(31, 32, 36);
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 919.937px;
+  top: 15.577px;
+  z-index: 138;
+}
+.Underline {
+  background-color: rgb(31, 32, 36);
+  opacity: 0.302;
+  position: absolute;
+  left: 921px;
+  top: 34px;
+  width: 150px;
+  height: 1px;
+  z-index: 137;
+}
+.Корпоративным_клиентам {
+  font-size: 14px;
+  font-family: "Circe";
+  color: rgb(31, 32, 36);
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 1086.937px;
+  top: 16.638px;
+  z-index: 136;
+}
+.Underline {
+  background-color: rgb(31, 32, 36);
+  opacity: 0.302;
+  position: absolute;
+  left: 1089px;
+  top: 34px;
+  width: 161px;
+  height: 1px;
+  z-index: 135;
+}
+
+
+
