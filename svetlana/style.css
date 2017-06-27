@@ -107,14 +107,15 @@
   clear: both;
 }
 
-.base_body {
-  margin: 0;
+.base__body {
+  margin: 0 auto;
 }
 
 .base__block {
   width: 1200px;
   margin: 0 auto;
   padding: 0 100px 115px;
+  background: #eee;
 }
 
 .banner {
@@ -198,6 +199,7 @@
 
 .about {
   padding: 10px 100px 0;
+  background: #fff;
 }
 
 .about__left {
@@ -292,11 +294,11 @@ about__text {
 
 .line {
   border-bottom: 1px solid #eeeeee;
-  margin: 60px 0 40px 0;
 }
 
 .client {
   padding: 0 100px;
+  background: #fff;
 }
 
 .client__info {
@@ -318,31 +320,75 @@ about__text {
   padding: 20px 0 0;
 }
 
+.client__about {
+  float: left;
+}
+
 .client__logo {
   margin-top: 25px;
 }
 
 .logo__item {
-  display: block;
-  float: left;
-  margin-right: 50px;
+  margin:0;
+  margin-top: 16px;
 }
 
 .client__text {
   font-family: Circe, Arial, Helvetica, sans-serif;
   line-height: 1.5625em;
   font-size: 16px;
-  margin: 10px 0 35px;
-}
-
-.text__item {
-  float: left;
-  width: 150px;
-  margin: 0;
   margin-right: 50px;
+  width: 150px;
 }
 
 .client__link {
   color: #008fe9;
   text-decoration: none;
+}
+
+.contact {
+  font-family: Circe, Arial, Helvetica, sans-serif;
+  background: #fff;
+}
+
+.contact__image {
+  float: left;
+  width: 334px;
+  height: 300px;
+}
+
+.contact__info {
+  float: left;
+  width: 812px;
+  margin-left: 5px;
+}
+
+.contact__phone {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 2.1875em;
+  float: left;
+  width: 250px;
+}
+
+.contact__mail {
+  float: left;
+  font-size: 32px;
+  line-height: 2.1875;
+}
+
+.mail__link {
+  color: #008fe9;
+  text-decoration: none;
+  background: linear-gradient(
+    to right,
+    rgba(0, 143, 233, 0.3),
+    rgba(0, 143, 233, 0.3) 50%,
+    rgba(0, 143, 233, 0.3) 50%,
+    rgba(0, 143, 233, 0.3) 100%
+  );
+  background-size: 1px 1px;
+  background-repeat: repeat-x;
+  background-position: 0 36px;
+  background-color: none;
 }
