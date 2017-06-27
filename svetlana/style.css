@@ -299,6 +299,8 @@ about__text {
 .client {
   padding: 0 100px;
   background: #fff;
+  padding-bottom: 60px;
+  border-bottom: 1px solid black;
 }
 
 .client__info {
@@ -348,7 +350,8 @@ about__text {
 
 .contact {
   font-family: Circe, Arial, Helvetica, sans-serif;
-  background: #fff;
+  background: #fff url(old-phone.png) no-repeat left 38px;
+  min-height: 335px;
 }
 
 .contact__image {
@@ -358,15 +361,14 @@ about__text {
 }
 
 .contact__info {
-  float: left;
-  width: 812px;
-  margin-left: 5px;
+  width: 810px;
+  padding: 50px 0 0 340px;
 }
 
 .contact__phone {
   font-weight: bold;
   font-size: 32px;
-  line-height: 2.1875em;
+  line-height: 1.25em;
   float: left;
   width: 250px;
 }
@@ -374,7 +376,7 @@ about__text {
 .contact__mail {
   float: left;
   font-size: 32px;
-  line-height: 2.1875;
+  line-height: 1.25em;
 }
 
 .mail__link {
