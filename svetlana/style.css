@@ -13,6 +13,21 @@
   display: none;
 }
 
+.root {
+  background: #eee;
+}
+
+.root__block {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 100px 115px;
+}
+
+.root__body {
+  position: relative;
+  margin: 0;
+}
+
 .button {
   font-family: Circe, Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -107,17 +122,6 @@
   clear: both;
 }
 
-.base__body {
-  margin: 0 auto;
-}
-
-.base__block {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 100px 115px;
-  background: #eee;
-}
-
 .banner {
   background: url(banner@2x.png);
   height: 430px;
@@ -131,7 +135,6 @@
   text-align: center;
   width: 100%;
 }
-
 
 .button_grey {
   background: rgba(31, 32, 36, 0.6);
@@ -198,8 +201,9 @@
 }
 
 .about {
-  padding: 10px 100px 0;
+  padding: 10px 100px 60px;
   background: #fff;
+  border-bottom: 1px solid #eee;
 }
 
 .about__left {
@@ -297,8 +301,9 @@ about__text {
 }
 
 .client {
-  padding: 0 100px;
+  padding: 40px 100px 60px;
   background: #fff;
+  border-bottom: 1px solid #eee;
 }
 
 .client__info {
@@ -348,7 +353,9 @@ about__text {
 
 .contact {
   font-family: Circe, Arial, Helvetica, sans-serif;
-  background: #fff;
+  background: #fff url(phone@2x.png) no-repeat left 35px;
+  min-height: 334px;
+  background-size: 334px 300px;
 }
 
 .contact__image {
@@ -360,13 +367,13 @@ about__text {
 .contact__info {
   float: left;
   width: 812px;
-  margin-left: 5px;
+  padding: 50px 0 0 340px;
 }
 
 .contact__phone {
   font-weight: bold;
   font-size: 32px;
-  line-height: 2.1875em;
+  line-height: 1.25em;
   float: left;
   width: 250px;
 }
@@ -374,7 +381,7 @@ about__text {
 .contact__mail {
   float: left;
   font-size: 32px;
-  line-height: 2.1875;
+  line-height: 1.25em;
 }
 
 .mail__link {
@@ -391,4 +398,11 @@ about__text {
   background-repeat: repeat-x;
   background-position: 0 36px;
   background-color: none;
+}
+
+.contact__text {
+  font-size: 16px;
+  line-height: 1.5625em;
+  width: 660px;
+  margin-top: 7px; 
 }
