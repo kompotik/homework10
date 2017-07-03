@@ -20,7 +20,7 @@
 .root__block {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 100px 115px;
+  padding: 0 100px;
 }
 
 .root__body {
@@ -118,7 +118,9 @@
   background-color: none;
 }
 
-.clearfix {
+.clearfix:after {
+  content: ' ';
+  display: block;
   clear: both;
 }
 
@@ -469,7 +471,8 @@ about__text {
 }
 
 .footer {
-  background: #fff;
+  background: url(footer-bg@2x.png) #fff;
+  background-size: 367.5px;
   padding: 25px 0;
 }
 
@@ -524,4 +527,18 @@ about__text {
 .text__left {
   float: left;
   width: 150px;
+}
+
+.copyright {
+  font-family: Circe, Arial, Helvetica, sans-serif;
+  color: #1f2024;
+  font-size: 14px;
+  line-height: 1.42857em;
+  padding: 28px 50px 48px 50px;
+  width: 611px;
+  color: #999;
+}
+
+.copyright__text {
+  margin: 0;
 }
