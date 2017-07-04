@@ -260,7 +260,7 @@
 }
 
 .mail{
-  margin: 9px 0 0 24px;
+  margin: 9px 173px 0 24px;
   float: left;
   font-size: 32px;
   font-family: Circe,bold;
@@ -274,6 +274,51 @@
   background-repeat: repeat-x;
   background-position: 0 36px;
   background-color: none;
+}
+
+.pictures{
+  float: left;
+  margin: 33px 100px 40px 101px;
+}
+
+.contacts{
+  background: url(telephone.png) no-repeat;
+  width:1200px;
+  height:270px;
+  margin:37px 0 0 0;
+}
+
+.contacts::after{
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.center::after{
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.picture::after{
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.input{
+  margin:13px 0 0 340px;
+  width:159px;
+  border-radius: 4px;
+  font-size:16px;
+  padding:17px 19px;
+  font-family:Circe,Arial, Helvetica, sans-serif;
 }
 
 
