@@ -205,10 +205,12 @@
 
 .info__left {
   float: left;
+  width: 670px;
 }
 
 .info__right {
   float: right;
+  width: 410px;
 }
 
 .info__item {
@@ -228,14 +230,15 @@
   font-size: 60px;
   line-height: 1.16em;
   color: #1f2024;
-  width: 600px;
-  margin-right: 0;
+  width: 555px;
+  margin-right: 45px;
   margin-top: 50px
 }
 
 .about__right {
   float: right;
-  width: 400px;
+  width: 370px;
+  margin-right: 30px;
   font-family: Circe, Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: bold;
@@ -294,13 +297,13 @@ about__text {
 }
 
 .images {
-  margin: 25px 0 40px;
+  margin: 10px 0 25px 0;
 }
 
 .image__item {
   display: block;
   float: left;
-  margin-right: 10px;
+  margin: 15px 10px 15px 0;
   height: 90px;
   width: 90px;
 }
@@ -355,17 +358,23 @@ about__text {
   padding: 20px 0 0;
 }
 
+.row:after {
+  content: ' ';
+  display: block;
+  clear: both;
+}
+
 .client__about {
   float: left;
+  width: 150px;
+  margin-right: 50px;
 }
 
 .client__logo {
   margin-top: 25px;
-}
-
-.logo__item {
-  margin:0;
-  margin-top: 16px;
+  height: 28px;
+  width: 150px;
+  display: block;
 }
 
 .client__text {
@@ -374,6 +383,7 @@ about__text {
   font-size: 16px;
   margin-right: 50px;
   width: 150px;
+  margin: 16px 50px 0 0;
 }
 
 .client__link {
