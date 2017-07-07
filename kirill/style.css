@@ -23,6 +23,11 @@
   font-family: Circe, Arial, Helvetica, sans-serif;
 }
 
+.BG_white{
+  background: #fff;
+}
+
+
 .button:hover {
   font-size: 16px;
   background: #d0d9ff;
@@ -323,8 +328,9 @@
 
 .footer{
   margin: 0 auto;
-  background: url();
+  background: url(BGCard@2x.png);
   padding:25px 0 0 0;
+  height: 75px;
 }
 
 .footer_left{
@@ -365,6 +371,19 @@
   padding: 0px 0px;
   font: right;
   color: #008fe9;
+}
+
+.footer_right{
+  width:255px;
+  float:right;
+}
+
+.maid{
+  float:right;
+  margin:4px 47px 0 0;
+  color:red;
+  font-size:15px;
+  font-family: Circe, Bold;
 }
 
 .clearfix {clear: both;}
