@@ -263,6 +263,7 @@ about__text {
   background-repeat: repeat-x;
   background-position: 0 71px;
   background-color: none;
+  cursor: pointer;
 }
 
 .about__right-link {
