@@ -59,22 +59,20 @@
       <div class="clearfix">
 
         <div class="about__left">
-          Изготавливаем <span class="dashed"
-          onclick="var imgs = document.querySelectorAll('.images');
-          imgs[0].style.display = '';
-          imgs[1].style.display = 'none';
-          imgs[2].style.display = 'none';
-          imgs[3].style.display = 'none';">купе</span>, <span class ="dashed"
+          Изготавливаем <span class="dashed" id="link__one">купе</span>, <span class ="dashed"
+          id="link__two"
           onclick="var imgs = document.querySelectorAll('.images');
           imgs[0].style.display = 'none';
           imgs[1].style.display = '';
           imgs[2].style.display = 'none';
           imgs[3].style.display = 'none';">кухни</span>, <span class="dashed"
+          id="link__tree"
           onclick="var imgs = document.querySelectorAll('.images');
           imgs[0].style.display = 'none';
           imgs[1].style.display = 'none';
           imgs[2].style.display = '';
           imgs[3].style.display = 'none';">офисную мебель</span> и <span class="dashed"
+          id="link__four"
           onclick="var imgs = document.querySelectorAll('.images');
           imgs[0].style.display = 'none';
           imgs[1].style.display = 'none';
@@ -95,7 +93,7 @@
         </div>
       </div>
 
-      <div class="images clearfix">
+      <div class="images clearfix" id="images__one">
         <img src="1@2x.png" alt="" class="image__item">
         <img src="1@2x.png" alt="" class="image__item">
         <img src="1@2x.png" alt="" class="image__item">
@@ -108,7 +106,7 @@
         <img src="1@2x.png" alt="" class="image__item">
       </div>
 
-      <div class="images clearfix" style="display: none;">
+      <div class="images clearfix" style="display: none;" id="images__two">
         <img src="2@2x.png" alt="" class="image__item">
         <img src="2@2x.png" alt="" class="image__item">
         <img src="2@2x.png" alt="" class="image__item">
@@ -121,7 +119,7 @@
         <img src="2@2x.png" alt="" class="image__item">
       </div>
 
-      <div class="images clearfix" style="display: none;">
+      <div class="images clearfix" style="display: none;" id="images__three">
         <img src="3@2x.png" alt="" class="image__item">
         <img src="3@2x.png" alt="" class="image__item">
         <img src="3@2x.png" alt="" class="image__item">
@@ -134,7 +132,7 @@
         <img src="3@2x.png" alt="" class="image__item">
       </div>
 
-      <div class="images clearfix" style="display: none;">
+      <div class="images clearfix" style="display: none;" id="images__four">
         <img src="4@2x.png" alt="" class="image__item">
         <img src="4@2x.png" alt="" class="image__item">
         <img src="4@2x.png" alt="" class="image__item">
@@ -249,5 +247,16 @@
       </div>
   </div>
 
+  <script>
+    var linkOne = document.querySelector('#link__one');
+    linkOne.onclick = function() {
+      var imgs = document.querySelectorAll('.images');
+      // for(var i = 0; i < imgs.length; i++) { imgs[i].style.display = 'none'; }
+      imgs.forEach(function(item) { item.style.display = 'none'; })
+
+      // imgs[0].style.display = '';
+      document.querySelector('#images__one').style.display = '';
+    }
+  </script>
 </body>
 </html>
