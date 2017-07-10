@@ -143,12 +143,16 @@
   width: 575px;
 }
 
-.about_link{
+.about_text{
+  text-decoration: none;
+  text-decoration: inherit;
   font-size: 60px;
   font-family:  Circe, Arial, Helvetica, sans-serif;
-  text-decoration: inherit;
+  cursor: pointer;
+}
+
+.about_link{
   color: #008fe9;
-  text-decoration: none;
   background: linear-gradient(
     to right,
     rgba( 178, 221, 248, 1),
@@ -159,7 +163,8 @@
   background-size: 10px 2px;
   background-repeat: repeat-x;
   background-position: 25px 73px;
-  background-color: none
+  background-color: none;
+  cursor: pointer;
 }
 
 .text{
@@ -173,6 +178,7 @@
 .picture{
   float:left;
   margin: 0 5px 0 5px;
+  width:90px;
 }
 
 .button_down{
@@ -318,11 +324,11 @@
 }
 
 .input{
-  margin:13px 0 0 340px;
+  margin:9px 0 0 340px;
   width:159px;
   border-radius: 4px;
   font-size:16px;
-  padding:17px 19px;
+  padding:15px 20px;
   font-family:Circe,Arial, Helvetica, sans-serif;
 }
 
