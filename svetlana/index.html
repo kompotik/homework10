@@ -60,26 +60,10 @@
 
         <div class="about__left">
           Изготавливаем <span class="dashed"
-          onclick="var imgs = document.querySelectorAll('.images');
-          imgs[0].style.display = '';
-          imgs[1].style.display = 'none';
-          imgs[2].style.display = 'none';
-          imgs[3].style.display = 'none';">купе</span>, <span class ="dashed"
-          onclick="var imgs = document.querySelectorAll('.images');
-          imgs[0].style.display = 'none';
-          imgs[1].style.display = '';
-          imgs[2].style.display = 'none';
-          imgs[3].style.display = 'none';">кухни</span>, <span class="dashed"
-          onclick="var imgs = document.querySelectorAll('.images');
-          imgs[0].style.display = 'none';
-          imgs[1].style.display = 'none';
-          imgs[2].style.display = '';
-          imgs[3].style.display = 'none';">офисную мебель</span> и <span class="dashed"
-          onclick="var imgs = document.querySelectorAll('.images');
-          imgs[0].style.display = 'none';
-          imgs[1].style.display = 'none';
-          imgs[2].style.display = 'none';
-          imgs[3].style.display = '';">кресла</span>
+          id="link__one">купе</span>, <span class ="dashed"
+          id="link__two">кухни</span>, <span class="dashed"
+          id="link__three">офисную мебель</span> и <span class="dashed"
+          id="link__four">кресла</span>
         </div>
 
         <div class="about__right">
@@ -95,7 +79,7 @@
         </div>
       </div>
 
-      <div class="images clearfix">
+      <div class="images clearfix" id="images__one">
         <img src="1@2x.png" alt="" class="image__item">
         <img src="1@2x.png" alt="" class="image__item">
         <img src="1@2x.png" alt="" class="image__item">
@@ -108,7 +92,7 @@
         <img src="1@2x.png" alt="" class="image__item">
       </div>
 
-      <div class="images clearfix" style="display: none;">
+      <div class="images clearfix" id="images__two" style="display: none;">
         <img src="2@2x.png" alt="" class="image__item">
         <img src="2@2x.png" alt="" class="image__item">
         <img src="2@2x.png" alt="" class="image__item">
@@ -121,7 +105,7 @@
         <img src="2@2x.png" alt="" class="image__item">
       </div>
 
-      <div class="images clearfix" style="display: none;">
+      <div class="images clearfix" id="images__three" style="display: none;">
         <img src="3@2x.png" alt="" class="image__item">
         <img src="3@2x.png" alt="" class="image__item">
         <img src="3@2x.png" alt="" class="image__item">
@@ -134,7 +118,7 @@
         <img src="3@2x.png" alt="" class="image__item">
       </div>
 
-      <div class="images clearfix" style="display: none;">
+      <div class="images clearfix" id="images__four" style="display: none;">
         <img src="4@2x.png" alt="" class="image__item">
         <img src="4@2x.png" alt="" class="image__item">
         <img src="4@2x.png" alt="" class="image__item">
@@ -248,6 +232,36 @@
         <p class="copyright__text">Все фотографии и тексты на сайте защищены авторским правом. Прежде чем использовать их, напишите нам на почту. В ином случае любое использование — незаконно. </p>
       </div>
   </div>
+
+  <script>
+    var linkOne = document.querySelector('#link__one');
+    linkOne.onclick = function() {
+      var imgs = document.querySelectorAll('.images');
+      imgs.forEach(function(item) { item.style.display = 'none'; })
+      document.querySelector('#images__one').style.display = '';
+    }
+
+    var linkTwo = document.querySelector('#link__two');
+    linkTwo.onclick = function() {
+      var imgs = document.querySelectorAll('.images');
+      imgs.forEach(function(item) { item.style.display = 'none'; })
+      document.querySelector('#images__two').style.display = '';
+    }
+
+    var linkThree = document.querySelector('#link__three');
+    linkThree.onclick = function() {
+      var imgs = document.querySelectorAll('.images');
+      imgs.forEach(function(item) { item.style.display = 'none'; })
+      document.querySelector('#images__three').style.display = '';
+    }
+
+    var linkFour = document.querySelector('#link__four');
+    linkFour.onclick = function() {
+      var imgs = document.querySelectorAll('.images');
+      imgs.forEach(function(item) { item.style.display = 'none'; })
+      document.querySelector('#images__four').style.display = '';
+    }
+  </script>
 
 </body>
 </html>
