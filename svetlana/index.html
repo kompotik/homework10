@@ -59,11 +59,11 @@
       <div class="clearfix">
 
         <div class="about__left">
-          Изготавливаем <span class="dashed"
-          id="link__one">купе</span>, <span class ="dashed"
-          id="link__two">кухни</span>, <span class="dashed"
-          id="link__three">офисную мебель</span> и <span class="dashed"
-          id="link__four">кресла</span>
+          Изготавливаем
+          <span class="dashed js-switcher__link" data-js-switcher="one">купе</span>,
+          <span class ="dashed js-switcher__link" data-js-switcher="two">кухни</span>,
+          <span class="dashed js-switcher__link" data-js-switcher="three">офисную мебель</span>
+          и&nbsp;<span class="dashed js-switcher__link" data-js-switcher="four">кресла</span>
         </div>
 
         <div class="about__right">
@@ -79,7 +79,7 @@
         </div>
       </div>
 
-      <div class="images clearfix" id="images__one">
+      <div class="images clearfix js-switcher__block" data-js-switcher="one">
         <img src="1@2x.png" alt="" class="image__item">
         <img src="1@2x.png" alt="" class="image__item">
         <img src="1@2x.png" alt="" class="image__item">
@@ -92,7 +92,7 @@
         <img src="1@2x.png" alt="" class="image__item">
       </div>
 
-      <div class="images clearfix" id="images__two" style="display: none;">
+      <div class="images clearfix js-switcher__block" data-js-switcher="two" style="display: none;">
         <img src="2@2x.png" alt="" class="image__item">
         <img src="2@2x.png" alt="" class="image__item">
         <img src="2@2x.png" alt="" class="image__item">
@@ -105,7 +105,7 @@
         <img src="2@2x.png" alt="" class="image__item">
       </div>
 
-      <div class="images clearfix" id="images__three" style="display: none;">
+      <div class="images clearfix js-switcher__block" data-js-switcher="three" style="display: none;">
         <img src="3@2x.png" alt="" class="image__item">
         <img src="3@2x.png" alt="" class="image__item">
         <img src="3@2x.png" alt="" class="image__item">
@@ -118,7 +118,7 @@
         <img src="3@2x.png" alt="" class="image__item">
       </div>
 
-      <div class="images clearfix" id="images__four" style="display: none;">
+      <div class="images clearfix js-switcher__block" data-js-switcher="four" style="display: none;">
         <img src="4@2x.png" alt="" class="image__item">
         <img src="4@2x.png" alt="" class="image__item">
         <img src="4@2x.png" alt="" class="image__item">
@@ -234,33 +234,24 @@
   </div>
 
   <script>
-    var linkOne = document.querySelector('#link__one');
-    linkOne.onclick = function() {
-      var imgs = document.querySelectorAll('.images');
-      imgs.forEach(function(item) { item.style.display = 'none'; })
-      document.querySelector('#images__one').style.display = '';
-    }
+    document.querySelectorAll('.js-switcher__link').forEach(function (item) {
+      item.onclick = function() {
+        console.log('tadam', this, this.dataset.jsSwitcher);
 
-    var linkTwo = document.querySelector('#link__two');
-    linkTwo.onclick = function() {
-      var imgs = document.querySelectorAll('.images');
-      imgs.forEach(function(item) { item.style.display = 'none'; })
-      document.querySelector('#images__two').style.display = '';
-    }
+        var blocksHide = document.querySelectorAll(
+          '.js-switcher__block:not([data-js-switcher=' + this.dataset.jsSwitcher + '])'
+        )
+        blocksHide.forEach(function(item) { item.style.display = 'none' });
 
-    var linkThree = document.querySelector('#link__three');
-    linkThree.onclick = function() {
-      var imgs = document.querySelectorAll('.images');
-      imgs.forEach(function(item) { item.style.display = 'none'; })
-      document.querySelector('#images__three').style.display = '';
-    }
+        var blockShow = document.querySelectorAll(
+          '.js-switcher__block[data-js-switcher=' + this.dataset.jsSwitcher + ']'
+        )
+        blockShow.forEach(function(item) { item.style.display = '' });
 
-    var linkFour = document.querySelector('#link__four');
-    linkFour.onclick = function() {
-      var imgs = document.querySelectorAll('.images');
-      imgs.forEach(function(item) { item.style.display = 'none'; })
-      document.querySelector('#images__four').style.display = '';
-    }
+        console.log('blocksHide', blocksHide);
+        console.log('blockShow', blockShow);
+      }
+    });
   </script>
 
 </body>
