@@ -7,6 +7,19 @@
   margin: 0 auto;
   background: #eeeeee;
 }
+.mockup {
+   background: url(mockup.png) center top no-repeat;
+   background-size: 1400px 2050px;
+   height: 2050px;
+   position: absolute;
+   top: 0;
+   right: 0;
+   left: 0;
+   bottom: auto;
+   margin: 0 auto;
+   opacity: 0.2;
+   display: none;
+}  
 
 .base__block {
     width: 1200px;
@@ -14,8 +27,9 @@
 }  
 .loft{
   color: #1f2024;
-  line-height: 2.14em;
+  line-height: 2.14285714285em;
   font-size: 14px;
+  min-height: 50px; 
 }
   .loft__left{
     padding: 0 40px 0 50px;
@@ -23,7 +37,7 @@
     float: left; 
    }
     .loft__content{
-      margin: 0.714em 1.25em 0.714em 0;
+      margin: 0.71428571428em 1.25em 0.71428571428em 0;
       float: left;
     }
   .loft__right{
@@ -142,17 +156,18 @@
     height: 90px;
     display: block;
     margin-right: 10px;
+    margin-bottom: 14.2px;
     float: left
   }
 
   .one__botton {
-    height: 160px;
+    height: 145.8px;
     position: relative;
   } 
     
   .BG_Button{
     position: absolute;
-    top: 40px;
+    top: 25.8px;
     max-width: 300px;
     padding: 17.5px 27.5px;
     font-size: 16px;
@@ -191,7 +206,7 @@
   }
 
   .clients__logo{
-    min-height: 192px;
+    min-height: 182px;
   }
 
   .images_logo{
@@ -203,14 +218,114 @@
   .text{
     margin: 16px 0;
     font-size: 16px;
-    line-height: 1.5624em;
+    line-height: 1.5625em;
    }
   .example__work{
     text-decoration: none;
     color: #008fe9;
 
   }
- 
-  .clearfix {clear: both;}
- 
+  .contacts{ 
+  background-color: white;
+  min-height: 334px;
+  
+  }
 
+  .contacts__img{
+    padding: 32px 30px 28px 0;
+    width: 280px;
+    height: 274px;
+    float: left;
+  }
+  .contacts__info {
+    padding: 52px 60px 58px 30px;
+    width: 800px;
+    height: 224px;
+    float: left;
+  }
+  .contacts__phone{
+    font-size: 32px;
+    padding: 0 0.9375em 0 0; 
+    line-height: 1em;
+    font-weight: bold;
+    float: left;
+    }
+  .contacts__mail{
+    font-size: 32px; 
+    line-height: 1em;
+    float: left;
+  }
+  .contacts__text{
+    font-size: 16px;
+    line-height: 1.5625em;
+  }
+
+  .contacts__search{
+    height: 60px;
+    position: relative;
+  }
+
+  input[type="search"] {
+  }
+  .s1::-webkit-input-placeholder {
+    color: #999999;
+  }
+
+  .r1 {
+    display: block;
+    font-size: 16px;
+    line-height: 1.5625em;  
+    width: 200px;
+    border-radius: 4px;
+    padding: 16.5px 20px;
+    margin: 0 10px 0 0;
+    color: #999999;
+    border: 1px solid #cdcdcd;
+    float: left;
+  }
+
+  .r1-width {
+    width: 340px;
+  }
+
+  .footer {
+    background-color: white;
+    padding: 20px 0 30px 0;
+    min-height: 50px;
+    font-size: 14px;
+    line-height: 1.78571428571em;
+  }
+
+  .footer-left{
+    width: 160px;
+    padding: 0 40px;
+    float: left  
+  }
+  .footer-center{
+    width: 680px;
+    padding: 0 40px 0 0;
+    float: left  
+  }
+  
+  .footer-right{
+    width: 140px;
+    padding: 0;
+    text-align: right;
+    float: left  
+  }
+
+  .footer-right-year{
+    width: 56px;
+    padding: 25px 22px 0px 22px;
+    font-weight: bold;
+    float: left; 
+  }
+  .note{
+    min-height: 40px;
+    padding: 20px 550px 56px 52px;
+    font-size: 14px;
+    line-height: 1.42857142857em;
+    color: #999999;
+  }
+
+  .clearfix {clear: both;}
