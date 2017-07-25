@@ -238,7 +238,7 @@
         var blocksHide = document.querySelectorAll('.js-switcher__block:not([data-js-switcher=' + this.dataset.jsSwitcher + '])')
         blocksHide.forEach(function(item) { item.style.display="none" });
 
-        var blocksShow = document.querySelectorAll('.js-switcher__block[data-js-switcher =' + this.dataset.jsSwitcher + ']')
+        var blocksShow = document.querySelectorAll('.js-switcher__block[data-js-switcher=' + this.dataset.jsSwitcher + ']')
         blocksShow.forEach(function(item) { item.style.display='' });
 
         console.log(blocksHide);
