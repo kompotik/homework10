@@ -62,14 +62,10 @@
 			</div>
 				<div class="center">
 					<span class="about">Изготавливаем 
-						<span class="about_link about_text"
-						id="link_one">купе</span>, 
-						<span class ="about_link"
-						id="link_two">кухни</span>,
-						<span class="about_link"
-						id="link_three">офисную мебель</span> и
-						<span class="about_link"
-						id="link_four">кресла</span>
+						<span class="about_link about_text js-switcher__link"data-js-switcher="one">купе</span>, 
+						<span class ="about_link js-switcher__link"data-js-switcher="two">кухни</span>,
+						<span class="about_link js-switcher__link"data-js-switcher="three">офисную мебель</span> и
+						<span class="about_link js-switcher__link"data-js-switcher="four">кресла</span>
 						</span>
 					<span class="text">
 							<p style="margin : 0px 0 0 0">Работаем с 1999 года. <a href="#" class="text_link">Прочитайте нашу историю</a></p>
@@ -79,7 +75,7 @@
 						</span>
 				</div>
 				<div class="pictures">
-					<div class="images" id="images_one">
+					<div class="images js-switcher__block" data-js-switcher="one" id="images_one">
 					<img src="1.png" alt="1" class="picture" style="margin: 0 5px 0 0px;">
 					<img src="1.png" alt="2" class="picture">
 					<img src="1.png" alt="3" class="picture">
@@ -91,7 +87,7 @@
 					<img src="1.png" alt="9" class="picture">
 					<img src="1.png" alt="10" class="picture">
 					</div>
-					<div class="images" style="display:none;"  id="images_two">
+					<div class="images js-switcher__block" data-js-switcher="two" style="display:none;"  id="images_two">
 					<img src="2@1x.png" alt="1" class="picture" style="margin: 0 5px 0 0px;">
 					<img src="2@1x.png" alt="2" class="picture">
 					<img src="2@1x.png" alt="3" class="picture">
@@ -103,7 +99,7 @@
 					<img src="2@1x.png" alt="9" class="picture">
 					<img src="2@1x.png" alt="10" class="picture">
 					</div>
-					<div class="images" style="display:none;" id="images_three">
+					<div class="images js-switcher__block" data-js-switcher="three" style="display:none;" id="images_three">
 					<img src="3@1x.png" alt="1" class="picture" style="margin: 0 5px 0 0px;">
 					<img src="3@1x.png" alt="2" class="picture">
 					<img src="3@1x.png" alt="3" class="picture">
@@ -115,7 +111,7 @@
 					<img src="3@1x.png" alt="9" class="picture">
 					<img src="3@1x.png" alt="10" class="picture">
 					</div>
-					<div class="images" style="display:none;" id="images_four">
+					<div class="images js-switcher__block" data-js-switcher="four" style="display:none;" id="images_four">
 					<img src="4@1x.png" alt="1" class="picture" style="margin: 0 5px 0 0px;">
 					<img src="4@1x.png" alt="2" class="picture">
 					<img src="4@1x.png" alt="3" class="picture">
@@ -177,30 +173,24 @@
 					</div>
 		</div>
 		<script>
-			var linkOne = document.querySelector('#link_one');
-			linkOne.onclick = function () {
-				var imgs = document.querySelectorAll('.images');
-				imgs.forEach(function(item) { item.style.display = 'none';})	
-				document.querySelector('#images_one').style.display = '';
-			}
-			var linkTwo = document.querySelector('#link_two');
-			linkTwo.onclick = function () {
-				var imgs = document.querySelectorAll('.images');
-				imgs.forEach(function(item) { item.style.display = 'none';})	
-				document.querySelector('#images_two').style.display = '';
-			}
-			var linkThree = document.querySelector('#link_three');
-			linkThree.onclick = function () {
-				var imgs = document.querySelectorAll('.images');
-				imgs.forEach(function(item) { item.style.display = 'none';})	
-				document.querySelector('#images_three').style.display = '';
-			}
-			var linkFour = document.querySelector('#link_four');
-			linkFour.onclick = function () {
-				var imgs = document.querySelectorAll('.images');
-				imgs.forEach(function(item) { item.style.display = 'none';})	
-				document.querySelector('#images_four').style.display = '';
-			}
+			document.querySelectorAll('.js-switcher__link').forEach(function (item) {
+				item.onclick = function() {
+					console.log('tadam', this, this.dataset.jsSwitcher);
+
+					var blocksHide = document.querySelectorAll(
+						'.js-switcher__block:not([data-js-switcher=' + this.dataset.jsSwitcher +'])'
+					)
+					blocksHide.forEach(function(item) { item.style.display = 'none'});
+
+					var blockShow = document.querySelectorAll(
+						'.js-switcher__block[data-js-switcher=' + this.dataset.jsSwitcher + ']'
+					)
+					blockShow.forEach(function(item) { item.style.display = ''});
+
+					console.log('blocksHide', blocksHide);
+					console.log('blockShow', blockShow);
+				}
+			});
 		</script>	
 			</body>
 </html>
