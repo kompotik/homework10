@@ -61,7 +61,7 @@
   background: red;
 }
 
-.banner_button:hover{
+.banner__button:hover{
   color: #fff;
   background: black;
   opacity: 0.8;
@@ -121,7 +121,7 @@
   font-size: 20px;
 }
 
-.TopBar{
+.topBar{
   font-family: Circe, Arial, Helvetica, sans-serif;
   font-size: 14px;
   text-decoration: inherit;
@@ -132,7 +132,7 @@
   color: black;
 }
 
-.Top{
+.top{
   width: 1200px;
   margin: -3px 0 0px 1px;
 }
@@ -147,7 +147,7 @@
   width: 575px;
 }
 
-.about_text{
+.about__text{
   text-decoration: none;
   text-decoration: inherit;
   font-size: 60px;
@@ -155,7 +155,7 @@
   cursor: pointer;
 }
 
-.about_link{
+.about__link_blue{
   color: #008fe9;
   background: linear-gradient(
     to right,
@@ -185,7 +185,7 @@
   width:90px;
 }
 
-.button_down{
+.button__down{
   font-size: 16px;
   display: block;
   background: #2656e0;
@@ -200,7 +200,7 @@
   font-family: Circe, Arial, Helvetica, sans-serif;
 }
 
-.BG_Button:active{
+.bg__button:active{
   background: #0d2694;
   box-shadow: 0px 2px 0px 0px rgba(88, 88, 88, 0.3), 0px 1px 0px 0px rgba(255, 255, 255, 0.004);
   background-image: -moz-linear-gradient( 90deg, rgb(20,58,213) 0%, rgb(20,59,216) 11%, rgb(20,59,216) 43%, rgb(19,56,207) 92%, rgb(13,38,148) 100%);
@@ -214,7 +214,7 @@
   margin: 17px auto;
 }
 
-.TopBar_link{
+.topBar__link{
   background: linear-gradient(
    to right,
     rgba( 175, 176, 177, 1),
@@ -234,7 +234,7 @@
   color: black;
 }
 
-.text_link{
+.text__link{
   color:#008fe9;
   text-decoration:none;
   background: linear-gradient(
@@ -248,7 +248,7 @@
   background-color: none;
 }
 
-.BG_Button {
+.bg__button {
   border-radius: 4px;
   background-image: -moz-linear-gradient( 90deg, rgb(14,44,205) 0%, rgb(11,36,199) 11%, rgb(19,57,215) 43%, rgb(35,81,223) 92%, rgb(103,152,240) 100%);
   background-image: -webkit-linear-gradient( 90deg, rgb(14,44,205) 0%, rgb(11,36,199) 11%, rgb(19,57,215) 43%, rgb(35,81,223) 92%, rgb(103,152,240) 100%);
@@ -269,7 +269,7 @@
 
 }
 
-.TopBar_link:hover {
+.topBar__link:hover {
   background: #dcdcdc linear-gradient(#fff, #dcdcdc);
   box-shadow: 0 0 0 1px #fff inset, 0 1px 1px #fff;
 }
@@ -343,7 +343,7 @@
   height: 75px;
 }
 
-.footer_left{
+.footer__left{
   float: left;
   width: 220px;
   margin: 0 auto;
@@ -357,13 +357,13 @@
   visibility: hidden;
 }
 
-.footer_text{
+.footer__text{
   font-size:14px;
   font-family:Circe,Arial, Helvetica, sans-serif;
   float: left;
 }
 
-.footer_link{
+.footer__link{
   background: linear-gradient(
    to right,
     rgba( 178, 221, 248, 1),
@@ -383,7 +383,7 @@
   color: #008fe9;
 }
 
-.footer_right{
+.footer__right{
   width:255px;
   float:right;
 }
