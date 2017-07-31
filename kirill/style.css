@@ -33,7 +33,7 @@
   background: #d0d9ff;
   text-align: center;
   color: #143bd8;
-}  
+}
 
 .banner__button {
   font-size: 16px;
@@ -54,7 +54,11 @@
   top: 357px;
   opacity: 0.6;
   right: 50px;
-  font-family: Circe, Arial, Helvetica, sans-serif;;
+  font-family: Circe, Arial, Helvetica, sans-serif;
+}
+
+.banner__button_red {
+  background: red;
 }
 
 .banner__button:hover{
@@ -83,7 +87,7 @@
 .header__center {
   font-family: Circe, Arial, Helvetica, sans-serif;
   margin: 0 250px 0 270px;
-  padding: 35px 60px; 
+  padding: 35px 60px;
 }
 
 .header__logo {
@@ -94,7 +98,7 @@
   display: block;
   margin: 41px auto;
 }
-  
+
 .header__link{
   color: inherit;
   color: #fff;
