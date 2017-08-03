@@ -236,24 +236,15 @@
     document
       .querySelectorAll('[data-js-switcher-link]')
       .forEach(function(item) {
-        console.log(0, item);
         item.onclick = function() {
-          console.log(1, this);
-
-          var blocksShow = document.querySelectorAll(
+          document.querySelectorAll(
             '[data-js-switcher-block="' + this.dataset.jsSwitcherLink + '"]'
-            // '[data-js-switcher-block="2"]'
-          );
-          console.log(2, blocksShow);
-          blocksShow.forEach(function(item) { item.style.display = ''; });
+          ).forEach(function(item) { item.style.display = ''; });
 
-
-          var blocksHide = document.querySelectorAll(
+          document.querySelectorAll(
             '[data-js-switcher-block]:not([data-js-switcher-block="'
               + this.dataset.jsSwitcherLink + '"]'
-          );
-          console.log(3, blocksHide);
-          blocksHide.forEach(function(item) { item.style.display = 'none'; });
+          ).forEach(function(item) { item.style.display = 'none'; });
         };
       });
   </script>
